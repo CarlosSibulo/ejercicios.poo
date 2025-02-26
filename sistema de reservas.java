@@ -15,10 +15,7 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    /**
-     *
-     * @return
-     */
+    
     public String toString() {
         return "Cliente: " + nombre;
     }
