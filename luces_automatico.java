@@ -1,35 +1,42 @@
-package luces_automatico;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
+import java.util.Scanner;
 
-
-public class luces_automatico {
-    private static final Random datoRandom = new Random();
+public class control_Luces {
     
-    public static void main(String[]args) throws InterruptedException{
-        while (true){
-            double luces = leerSensor();
-            System.out.println("luces actual: 10", double luces);
-            
-            if(luces<10){
-                String estado = "luces activadas";
-            } else if (luces <=15){
-                String estado = "luces inactivas";
-            }else {
-                String estado = "sensor activado";
-            }
-            
-            try{
-                TimeUnit.SECONDS.sleep(5); //Espera 5 segundos antes de la proxima lectura
-            }catch(InterruptedException){
-                thread.currentThread().interrupt();
-                System.err.println("Error: "+ e.getMessage());
-            }
+    public static void prenderluces(){
+        Scanner luceScanner = new Scanner(System.in);
+        noche objnoche = new noche();
+        objCasa Sensor = new luces.nextInt();
+        objprenderluces.setnocheControl_luces(datonoche);
+        if (prenderluces=noche){
+            boolean = true;
+           System.out.println("luces prendidas");
+        }else(false){
+          System.out.println("luces apagadas");
         }
     }
-    private static double leerSensor() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public static void movimiento(){
+        movimiento objmovimiento = new movimiento();
+        objCasa Sensor = new luces.nextInt();
+        objmovimiento.setmovimientoControl_luces(datomovimiento);
+        if (prenderluces = movimiento){
+          boolean = true;
+           System.out.println("luces prendidas"); 
+        }else(false){
+           System.out.println("luces apagadas"); 
+        }
     }
-    return 0 + (15 - 0) * random.nexDouble(); //Genera unas luces entre 0 y 15
-
-  }
+     public static void Apagarluces(){
+       dia objdia =  new dia();
+       objApagarluces.setdiaControl_luces(datodia);
+       objCasa Sensor = new luces.nextInt();
+      while(luces){
+        if (dia=luces){
+            System.out.println("luces apagadas");
+            boolean = true;
+            break;
+        }else(false){
+            System.out.println("luces prendidas");
+        }
+      }
+   }
+}
